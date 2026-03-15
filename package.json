@@ -1,0 +1,28 @@
+{
+  "name": "tamer-secure-store",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Secure key-value storage for Lynx with Android KeyStore and iOS Keychain.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "files": ["dist", "src", "android", "ios"],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Nanofuxion",
+  "license": "MIT"
+}

@@ -1,0 +1,14 @@
+{
+  "platforms": {
+    "android": {
+      "packageName": "com.nanofuxion.tamersecurestore",
+      "moduleClassName": "com.nanofuxion.tamersecurestore.SecureStoreModule",
+      "sourceDir": "android",
+      "attachHostView": true
+    },
+    "ios": {
+      "podspecPath": "ios/tamersecurestore",
+      "moduleClassName": "SecureStoreModule"
+    }
+  }
+}
