@@ -5,7 +5,7 @@ Secure key-value storage for Lynx. Uses Android KeyStore + AES-256-GCM and iOS K
 ## Installation
 
 ```bash
-npm install tamer-secure-store
+npm install @tamer4lynx/tamer-secure-store
 ```
 
 Add to your app's dependencies and run `t4l link`. Uses **lynx.ext.json** (RFC standard).
@@ -13,7 +13,7 @@ Add to your app's dependencies and run `t4l link`. Uses **lynx.ext.json** (RFC s
 ## Usage
 
 ```ts
-import * as SecureStore from 'tamer-secure-store'
+import * as SecureStore from '@tamer4lynx/tamer-secure-store'
 
 await SecureStore.setItemAsync('token', 'secret-value')
 const value = await SecureStore.getItemAsync('token')
