@@ -16,6 +16,14 @@ export type SecureStoreOptions = {
   accessGroup?: string
 }
 
+/** Use with `useInitData()` from the Lynx bundle so storage is scoped per logical app (tamerAppKey from dev server meta), not per dev-server URL. */
+export function resolveKeychainServiceWithTamerIdentity(initData: unknown, baseService = 'key_v1'): string {
+  if (initData == null || typeof initData !== 'object') return baseService
+  const key = (initData as Record<string, unknown>).tamerAppKey
+  if (typeof key !== 'string' || !key.trim()) return baseService
+  return `${baseService}:${key.trim()}`
+}
+
 function ensureValidKey(key: string) {
   if (!/^[\w.-]+$/.test(key)) {
     throw new Error(

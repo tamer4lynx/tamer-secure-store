@@ -1,6 +1,6 @@
 {
   "name": "@tamer4lynx/tamer-secure-store",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publishConfig": { "access": "public", "tag": "prerelease" },
   "type": "module",
   "description": "Secure key-value storage for Lynx with Android KeyStore and iOS Keychain.",

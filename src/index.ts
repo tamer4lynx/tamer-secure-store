@@ -4,6 +4,7 @@ export {
   deleteItemAsync,
   getItem,
   setItem,
+  resolveKeychainServiceWithTamerIdentity,
   canUseBiometricAuthentication,
   isAvailableAsync,
   AFTER_FIRST_UNLOCK,
